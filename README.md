@@ -1,21 +1,27 @@
-- [html-css-js-template](#html-css-js-template)
-  - [Consegna base](#consegna-base)
-  - [Consegna bonus](#consegna-bonus)
-  - [Svolgimento base](#svolgimento-base)
-    - [Pagina da replicare](#pagina-da-replicare)
-    - [Analisi tecnica](#analisi-tecnica)
-    - [Risultato ottenuto](#risultato-ottenuto)
+- [js-paliedispari](#js-paliedispari)
+  - [Consegna](#consegna)
+    - [Palidroma](#palidroma)
+    - [Pari e Dispari](#pari-e-dispari)
+  - [Consigli](#consigli)
+  - [BONUS](#bonus)
 
-# html-css-js-template
+# js-paliedispari
 
-## Consegna base
+## Consegna
 
-## Consegna bonus
+### Palidroma
 
-## Svolgimento base
+Chiedere all’utente di inserire una parola. Creare una funzione per capire se la parola inserita è palindroma. Usate poi la funzione per decretare se la parola inserita dall'utente è palindroma o meno. In Internet trovate degli esempi di parole palindrome.
 
-### [Pagina da replicare](./img/screenshot/exercise/)
+### Pari e Dispari
 
-### [Analisi tecnica](./img/screenshot/analysis/)
+L’utente sceglie pari o dispari e inserisce un numero da 1 a 5. Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione). Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione). Dichiariamo chi ha vinto.
 
-### [Risultato ottenuto](./index.html)
+## Consigli
+
+- Scriviamo sempre in italiano i passaggi che vogliamo fare, visualizzando quello che state facendo voi su carta e penna.
+- Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti.
+
+## BONUS
+
+Fare lo snack n° 12 e n°13 di questo deck di slide
