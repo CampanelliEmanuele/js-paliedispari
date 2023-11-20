@@ -8,7 +8,13 @@ function isPalindrome(word) {
     return true;
 }
 
+function removeWhiteSpaces(word) {
+    return word.replace(/\s+/g, '');
+}
+
 let word = prompt("Enter a word: ");
+
+word = removeWhiteSpaces(word)
 
 if (isPalindrome(word)) {
     console.log("The word " + word + " IS palindrome.")
