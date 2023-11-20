@@ -26,10 +26,12 @@ if (isPalindrome(word)) {
 
 /* EVEN OR ODD */
 
+
+
 function getUserChoise() {
     let userChoise = '';
-    while (userChoise != '0' && userChoise != '1') {
-        userChoise = prompt("Type 0 to choose EVEN or 1 to choose ODD: ");
+    while (userChoise != 'even' && userChoise != 'odd') {
+        userChoise = prompt("Chose even or odd by typing your choise: ");
     }
     return userChoise;
 }
@@ -46,13 +48,34 @@ function getRandomNumber(upperLimit, lowerLimit) {
     return Math.floor(Math.random() * (upperLimit - lowerLimit + 1) + lowerLimit)
 }
 
+function isEven(num) {
+    return num % 2 == 0;
+}
+
 let userChoise = getUserChoise();
 let userNumber = getUserNumber();
 let randomNumber = getRandomNumber(0, 6);
 
+let sum = parseInt(userNumber) + parseInt(randomNumber);
+console.log("");
 
+let output = `
+DATAS
+user choise: ${userChoise}
+user number: ${userNumber}
+computer number: ${randomNumber}
+sum: ${sum}
+`;
 
+if (isEven(sum) && userChoise == "even") {
+    output += "The sum is even: U r the winner!";
+} else if (!isEven(sum) && userChoise == "odd") {
+    output += "The sum is odd: U r the winner!";
+} else {
+    output += "Nice try, for a loser...";
+}
 
+console.log(output);
 
 
 
