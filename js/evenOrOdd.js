@@ -16,8 +16,10 @@ function getUserNumber() {
     return userNumber;
 }
 
-function getRandomNumber(upperLimit, lowerLimit) {
-    return Math.floor(Math.random() * (upperLimit - lowerLimit + 1) + lowerLimit)
+/* Extremes included */
+function getRandomNumber(max, min) {
+    max++; min++;
+    return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
 function isEven(num) {
@@ -26,7 +28,7 @@ function isEven(num) {
 
 let userChoise = getUserChoise();
 let userNumber = getUserNumber();
-let randomNumber = getRandomNumber(0, 6);
+let randomNumber = getRandomNumber(1, 5);
 
 let sum = parseInt(userNumber) + parseInt(randomNumber);
 console.log("");
